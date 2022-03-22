@@ -1,0 +1,178 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.notetitle-input {
+  width: 100%;
+  border: unset;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.note-input {
+  width: 100%;
+  height: 60px;
+  border: unset;
+  border-radius: 2px;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  resize: none;
+  margin-top: 12px;
+}
+
+.addArea {
+  width: 83vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 14%);
+  background-color: white;
+}
+
+.position-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%);
+  padding: 8px;
+  margin-bottom: 32px;
+  background-color: rgb(102, 187, 106);
+  border-radius: 2px;
+  width: 15vw;
+  min-width: 150px;
+  margin: 5px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.card-bg {
+  width: 83vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.cardNote {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.button {
+  background-color: rgb(33, 150, 243);
+  padding: 4px;
+  border-radius: 2px;
+  border: unset;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(0, 122, 221);
+}
+
+.delete-img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.plus-img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  margin-right: 4px;
+}
+
+.red-alert {
+  color: red;
+  font-size: 18px;
+}
+
+.border-red {
+  box-shadow: 0px 0px 6px 0px rgb(231 31 31);
+}
+
+.empty-notes {
+  color: #80868b;
+  font-size: 18px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.d-none {
+  display: none;
+}
+
+
+@media(max-width: 480px) {
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 33px;
+  }
+
+  .note-input {
+    height: 30px;
+  }
+
+  .empty-notes {
+    font-size: 10px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+
+}
